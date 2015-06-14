@@ -198,6 +198,7 @@ nav {
 /* content styles */
 .item {
 	display:table;
+	height: 450px;
 }
 .content {
 	display:table-cell;
@@ -238,8 +239,7 @@ nav {
 /* THIS IS SLIDER FOR TESTIMONIAL SECTION */
 
 .carousel-control.left,.carousel-control.right  {background:none;width:25px; color: #646a76; box-shadow: none;}
-.carousel-control.left {top:20%; color: #46474a; font-size: 10em; }
-.carousel-control.right {top:20%; color: #46474a; font-size:10em;}
+.carousel-control.left, .carousel-control.right  {top:20%; color: #46474a; font-size: 10em; }
 
 .broun-block {
     background: #fff;
@@ -247,61 +247,66 @@ nav {
     padding-top: 50px;
     border-top:3px solid #424b52;
 }
+.carousel {
+	padding-bottom: 40px;
+}
+
 .block-text {
-    background-color: #4a88dd;
     color: #fff;
     font-size: 14px;
-    -webkit-border-radius:9999px;
-    padding: 80px 70px;
-    width: 300px;
-    height: 300px;
-    font-family: 'Open Sans', sans-serif;
+	border-radius: 100%;
+    padding-top: 90px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
+.block-text:after {
+    top: 98%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-width: 25px;
+	margin-left: -20px;
+}
+/* Customize position for each bubble testimonial */
+.first-posi {position: absolute; top: -1px; left: 27%;}
+.second-posi {position: absolute; top: 2px; right: 20%;}
+
+.first-testi {background: #4a88dd; width: 280px; height: 280px;}
+.second-testi {background:#48cfae; width: 300px; height: 300px;}
+
+.first-testi:after {border-top-color: #4a88dd}
+.second-testi:after {border-top-color: #48CFAE}
+
+
 .block-text a {
- color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+ 	color: #fff;
+    font-size: 36px;
     line-height: 20px;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-        font-weight: 600;
-
+    padding-bottom: 12px;
+    text-transform: uppercase;
 }
 .mark {
     padding: 12px 0;background:none;
 }
 .block-text p {
     color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 20px;
-    text-align: center;
-    font-weight: 300;
+    line-height: 25px;
+    font-weight: 100;
+    font-size: 22px;
 }
 
-.sprite-i-triangle {
-    background-position: 0 -1298px;
-    height: 44px;
-    width: 50px;
-}
-.block-text ins {
-    bottom: -44px;
-    left: 50%;
-    margin-left: -60px;
-}
-
-.block {
-    display: block;
-}
 .zmin {
     z-index: 1;
 }
-.ab {
-    position: absolute;
-}
 
 .person-text {
-    padding: 10px 0 0;
+    padding: 30px 0 0;
     text-align: center;
     z-index: 2;
     margin-left: -4em
@@ -321,8 +326,15 @@ nav {
 .rel {
     position: relative;
 }
-
-
+img.white-space {
+	margin-right: 18.24px;
+}
+img.adjust {
+	margin-left: 8px;
+}
+.fa-chevron-left, .fa-chevron-right {
+	font-size: 32px;
+}
 
 
 

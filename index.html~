@@ -188,7 +188,7 @@
             <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="item active">          
-                	    <div class="col-md-4 col-xs-6 col-xs-offest-6 wow fadeInLeft first-posi">
+                	    <div class="col-md-4 col-xs-6 col-xs-offest-3 wow fadeInLeft first-posi">
         				    <div class="block-text rel zmin first-testi">
 						        <a title="" href="#">Awasome</a>
 						        <p>

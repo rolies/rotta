@@ -391,8 +391,8 @@ img.adjust {
 	margin-left: -20px;
 }
 /* Customize position for each bubble testimonial */
-.first-posi {position: absolute; top: -1px; left: 27%;}
-.second-posi {position: absolute; top: 2px; right: 20%;}
+.first-posi {position: absolute; top: -1px; left: 20%;}
+.second-posi {position: absolute; top: 2px; right: 27%;}
 
 .first-testi {background: #4a88dd; width: 280px; height: 280px;}
 .second-testi {background:#48cfae; width: 300px; height: 300px;}

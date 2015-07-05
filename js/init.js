@@ -23,7 +23,7 @@
 //THIS IS FOR PARALLAX EFFECT ON PAGE
 
 $('.home').parallax({imageSrc: 'img/header.jpg'});
-$('.footer').parallax({imageSrc: 'img/contact.jpg'});
+$('.contact-parallax').parallax({imageSrc: 'img/contact.jpg'});
 /* Create HTML5 element for IE */
 document.createElement("section");
 

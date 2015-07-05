@@ -224,7 +224,6 @@ nav {
 	background-color: transparent;
 	border-color: #434A54;
 	color: #434A54;
-	font-size: 28px;
 	font-weight: 100;
 }
 .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover {
@@ -241,10 +240,6 @@ nav {
 }
 .work-img img {
 	width: 100%;
-}
-ul, .col-md-4, .col-sm-6, .col-xs-12 {         
-    padding:0 0 0 0;
-    margin:0 0 0 0;
 }
 
 ul, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {         
@@ -337,9 +332,7 @@ ul li img, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
     color: #fff;
     font-size: 12px;
 	margin: 0;
-    padding-top: 90px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 60px 20px 40px 20px;
 }
 .block-text:after {
     top: 98%;
@@ -355,11 +348,11 @@ ul li img, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
 	margin-left: -20px;
 }
 /* Customize position for each bubble testimonial */
-.first-posi {position: static}
-.second-posi {position: static}
+/*.first-posi {position: static}
+.second-posi {position: static}*/
 
-.first-testi {background: #4a88dd; width: 300px; height: 300px;}
-.second-testi {background:#48cfae; width: 300px; height: 300px;}
+.first-testi {background: #4a88dd; height: auto;}
+.second-testi {background:#48cfae; height: auto;}
 
 .first-testi:after {border-top-color: #4a88dd}
 .second-testi:after {border-top-color: #48CFAE}
@@ -367,7 +360,7 @@ ul li img, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
 
 .block-text a {
  	color: #fff;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 18px;
     text-decoration: none;
     padding-bottom: 12px;
@@ -380,7 +373,7 @@ ul li img, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
     color: #fff;
     line-height: 25px;
     font-weight: 100;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .zmin {
@@ -416,57 +409,22 @@ img.adjust {
 .fa-chevron-left, .fa-chevron-right {
 	font-size: 32px;
 }
-/*Responsive Code (Mobile first, means the default css styling for the small device)*/
-@media(min-width:480px) {
-
-
-	.block-text {
-	    font-size: 14px;
-		border-radius: 100%;
-	    padding-top: 90px;
-	    padding-right: 30px;
-	    padding-left: 30px;
-	}
-	
-	/* Customize position for each bubble testimonial */
-	.first-posi {position: absolute; top: -1px; left: 27%;}
-	.second-posi {position: absolute; top: 2px; right: 20%;}
-
-	.first-testi {width: 280px; height: 280px;}
-	.second-testi {width: 300px; height: 300px;}
-
-	.block-text a {
-	    font-size: 34px;
-	    line-height: 20px;
-	}
-	.person-text {
-	    margin-left: -4em
-	}
-
-	.rel {
-	    position: relative;
-	}
-}
 
 /* Footer starting here */
 
-.footer{	
-	height: 100px;  
-	margin: 0 auto; 
-	width: 100%; 
-	position: relative; 
-	color: #fff;
-	padding-bottom: 42%;
-	margin-top: 2%;
-	overflow:none;
-}
 
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+.getIN {
+	height:540px; 
+	background:#fff;
+	padding-top: 80px;
 }
-
+.contact-parallax {
+	height: 520px;
+}
 .contact-container{
+	position: relative;
+	bottom: -80px;
+	color: #FFF;
 	width: 500px;
 	height: auto;
 	padding: 5px 28px 28px 28px;
@@ -546,7 +504,72 @@ img.adjust {
 }
 
 
-
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/*Responsive Code (Mobile first, means the default css styling (above) are for the small device)*/
+@media(min-width:750px) {
+
+	.btn , .btn-default {
+	font-size: 28px;
+}
+	.block-text {
+	    font-size: 14px;
+		border-radius: 100%;
+	    padding-top: 90px;
+	    padding-right: 50px;
+	    padding-left: 30px;
+	}
+	
+	/* Customize position for each bubble testimonial */
+	.first-posi {position: absolute; top: -1px; left: 14%;}
+	.second-posi {position: absolute; top: 2px; right: 3%;}
+
+	.first-testi {width: 280px; height: 280px;}
+	.second-testi {width: 300px; height: 300px;}
+
+	.block-text a {
+	    font-size: 28px;
+	    font-weight: 700;
+	    line-height: 28px;
+	}
+	.block-text p {
+	    font-size: 16px;
+	    font-weight: 100;
+	}
+
+	.person-text {
+	    margin-left: -4em
+	}
+
+	.rel {
+	    position: relative;
+	}
+}
+
+@media(min-width:992px) {
+	/* Customize position for each bubble testimonial */
+	.first-posi {position: absolute; top: -1px; left: 23%;}
+	.second-posi {position: absolute; top: 2px; right: 18%;}
+
+	.block-text a {
+	    font-size: 36px;
+	}
+	.block-text p {
+	    font-size: 20px;
+	}
+}
+
+@media(min-width:1200px) {
+	/* Customize position for each bubble testimonial */
+	.first-posi {position: absolute; top: -1px; left: 25%;}
+	.second-posi {position: absolute; top: 2px; right: 20%;}
+
+	.block-text a {
+	    font-size: 36px;
+	}
+	.block-text p {
+	    font-size: 20px;
+	}
+}

@@ -68,6 +68,15 @@ $(function() {
   });
 });
 
+// FOR NAVBAR
+$(window).scroll(function() {
+        if ($(this).scrollTop() > 15) {
+            $('nav').addClass("navbar-alt")
+        } else {
+            $('nav').removeClass("navbar-alt")
+        }
+    });
+
 // INITIALIZATION FOR ANIMATION
 new WOW().init();
 

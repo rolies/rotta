@@ -123,6 +123,9 @@ nav {
 	position: relative;
 	top: -70px;
 }
+@media (min-width: @screen-md-min) {
+
+}
 .iner_hero{
 	margin-top: -50px;
 }
@@ -236,11 +239,26 @@ nav {
 	width: auto;
 	height: 200px;
 }
-.row .work-img figure img{
-    margin: 0;
-    overflow: hidden;
-	float: left;
+.work-img img {
+	width: 100%;
 }
+ul, .col-md-4, .col-sm-6, .col-xs-12 {         
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+ul, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {         
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+ }
+ul li, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {     
+ 	list-style:none;
+	
+      }
+ul li img, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {
+          cursor: pointer;
+}
+
 
 .row-centered {
     text-align:center;
@@ -317,7 +335,7 @@ nav {
 
 .block-text {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
 	margin: 0;
     padding-top: 90px;
     padding-right: 20px;
@@ -349,8 +367,8 @@ nav {
 
 .block-text a {
  	color: #fff;
-    font-size: 36px;
-    line-height: 20px;
+    font-size: 32px;
+    line-height: 18px;
     text-decoration: none;
     padding-bottom: 12px;
     text-transform: uppercase;
@@ -384,7 +402,6 @@ nav {
 }
 .person-text i {
     color: #fff;
-    font-family: Georgia;
     font-size: 13px;
 }
 .rel {
@@ -399,106 +416,36 @@ img.adjust {
 .fa-chevron-left, .fa-chevron-right {
 	font-size: 32px;
 }
-/* Small device 768 and up */
-
-@media(min-width:768px) {
-.carousel-control.left,.carousel-control.right  {background:none;width:25px; color: #646a76; box-shadow: none;}
-.carousel-control.left, .carousel-control.right  {top:20%; color: #46474a; font-size: 10em; }
-
-.broun-block {
-    background: #fff;
-    padding-bottom: 40px;
-    padding-top: 50px;
-    border-top:3px solid #424b52;
-}
-.carousel {
-	padding-bottom: 40px;
-}
-
-.block-text {
-    color: #fff;
-    font-size: 14px;
-	border-radius: 100%;
-    padding-top: 90px;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-.block-text:after {
-    top: 98%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-width: 25px;
-	margin-left: -20px;
-}
-/* Customize position for each bubble testimonial */
-.first-posi {position: absolute; top: -1px; left: 27%;}
-.second-posi {position: absolute; top: 2px; right: 20%;}
-
-.first-testi {background: #4a88dd; width: 280px; height: 280px;}
-.second-testi {background:#48cfae; width: 300px; height: 300px;}
-
-.first-testi:after {border-top-color: #4a88dd}
-.second-testi:after {border-top-color: #48CFAE}
+/*Responsive Code (Mobile first, means the default css styling for the small device)*/
+@media(min-width:480px) {
 
 
-.block-text a {
- 	color: #fff;
-    font-size: 36px;
-    line-height: 20px;
-    text-decoration: none;
-    padding-bottom: 12px;
-    text-transform: uppercase;
-}
-.mark {
-    padding: 12px 0;background:none;
-}
-.block-text p {
-    color: #fff;
-    line-height: 25px;
-    font-weight: 100;
-    font-size: 22px;
-}
+	.block-text {
+	    font-size: 14px;
+		border-radius: 100%;
+	    padding-top: 90px;
+	    padding-right: 30px;
+	    padding-left: 30px;
+	}
+	
+	/* Customize position for each bubble testimonial */
+	.first-posi {position: absolute; top: -1px; left: 27%;}
+	.second-posi {position: absolute; top: 2px; right: 20%;}
 
-.zmin {
-    z-index: 1;
-}
+	.first-testi {width: 280px; height: 280px;}
+	.second-testi {width: 300px; height: 300px;}
 
-.person-text {
-    padding: 30px 0 0;
-    text-align: center;
-    z-index: 2;
-    margin-left: -4em
-}
-.person-text a {
-    color: #ffcc00;
-    display: block;
-    font-size: 14px;
-    margin-top: 3px;
-    text-decoration: underline;
-}
-.person-text i {
-    color: #fff;
-    font-family: Georgia;
-    font-size: 13px;
-}
-.rel {
-    position: relative;
-}
-img.white-space {
-	margin-right: 18.24px;
-}
-img.adjust {
-	margin-left: 8px;
-}
-.fa-chevron-left, .fa-chevron-right {
-	font-size: 32px;
- }
+	.block-text a {
+	    font-size: 34px;
+	    line-height: 20px;
+	}
+	.person-text {
+	    margin-left: -4em
+	}
+
+	.rel {
+	    position: relative;
+	}
 }
 
 /* Footer starting here */

@@ -4,11 +4,11 @@
 	<title> Luthfi Web Design and Development </title>
 	<!-- <meta charset="utf-8"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="css/style.css" rel="stylesheet">
 	<link href="css/skill.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
 	
 
@@ -28,8 +28,8 @@
 	  					<span class="icon-bar"></span>
 	  					<span class="icon-bar"></span>
 	  				</button>
-				<!-- Your Logo -->
-	  			<img src="img/logo-small.png" class="img-responsive logo-small">
+				<!-- Your Logo --> 
+	  			<i class="icon fa fa-diamond fa-4x"></i>
 				</div>
 				<!-- Start Navigation -->
 	  			<div class="collapse navbar-collapse" id="collapse" role="navigation">
@@ -46,39 +46,49 @@
 			</div>		
 			</div>
 	  	</nav>
-	  	
 	</header>
 
-	<section class="home" data-parallax="scroll">
-		<div class="container">
+<!-- ------------- Image Parallax and it's components HTML ------------- -->	
+<section class="home" data-parallax="scroll">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12 wow fadeInUp">
-				  <div class="perkenalan">
-				    <i class="bulet icon fa fa-diamond fa-4x"></i>
-					  <div class="iner_hero">
-						<h2>Quotes Today</h2>		         
-						<p>Intellectual property is an important legal and cultural issue. Society as a whole has complex issues to 
-						face here: private ownership vs. open source, and so on.</p>
-					  </div>
-				  </div>
+				<div class="col-md-4 col-sm-2 hidden-xs me wow fadeInUp">
+					<img src="img/people1.png" width="560px">
+				</div>
+
+				<div class="col-md-8 col-sm-10 col-xs-12 wow fadeInRight">
+					<div class="introduce">
+				  		<div class="iner-intro pull-left">
+							<h2>Hi...</h2>
+							<h3>Nice to meet you!</h3>	         
+							<p>My name is JOHN DEW, Freelance passionate in Desktop and Mobile programming</p>
+				  		</div>
+				  		<div class="intro-img">
+				  			<img src="img/introIMG.jpg" style="width: 100%">
+				  		</div>
+				  	</div>
 		        </div>
 	    	</div>
 	    </div>
 	</section>
 
 	<section id="about">
+	<div class="lineStright"></div>
 	<div class="container">
 		<div class="row aboutme">
-			<div class="col-md-8 wow zoomInUp">
-				<div class="section-title wow fadeInUp"><h2>About me</h2></div>
+			<div class="col-md-8 wow fadeInUp">
+				<div class="section-title"><h2>About me</h2></div>
 				<p>
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui. Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum. Vestibulum pretium, lectus nec venenatis volutpat, purus lectus ultrices risus, a condimentum risus mi et quam. Pellentesque auctor fringilla neque.
 				</p>
-				<a class="tombol" href="#" role="button">Read More</a>
+				<a class="button button-primary" href="#" role="button">Read More</a>
 			</div>
 
-			<div class="col-md-4 wow zoomInUp">
-				
+			<div class="col-md-4 aboutPIC">
+				<hr>
+				<img src="img/introIMG.png" class="img-responsive"/>
+				<hr>
+				<div class="pull-right">Peep My Skills <i class="fa fa-angle-double-down"></i></div>
 			</div>
 
 		</div>
@@ -86,8 +96,8 @@
 	</section>
 
 	<section id="work">
-		<div class="container-fluid works" id="work">
-		  <div class="row">
+		<div class="container-fluid" id="work">
+		  <div class="row works">
 			<div class="col-md-12 text-center">
 				<div class="section-title"><h2 class="wow fadeInUp">my works</h2></div>
 				<div class="btn-group" data-toggle="buttons">
@@ -106,16 +116,15 @@
 				</div>
 				</div>
 				<div class="work-img">
-					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/app4.PNG" class="img-responsive"></li>
-					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/app4.PNG" class="img-responsive"></li>
-					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/330x200.gif" class="img-responsive"></li>
-					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/330x200.gif" class="img-responsive"></li>
+					<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/app5.PNG" class="img-responsive"></li>
+					<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/app8.PNG" class="img-responsive"></li>
+					<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/330x200.gif" class="img-responsive"></li>
+					<li class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/330x200.gif" class="img-responsive"></li>
 					
-					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/app1.png" class="img-responsive"></li>
-					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12"><img src="img/app1.png" class="img-responsive"></li>
-					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 hidden-xs"><img src="img/app1.png" class="img-responsive"></li>
-					<li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 hidden-xs"><img src="img/app1.png" class="img-responsive"></li>
-
+					<li class="col-lg-3 col-md-3 col-sm-6 hidden-xs"><img src="img/app4.png" class="img-responsive"></li>
+					<li class="col-lg-3 col-md-3 col-sm-6 hidden-xs"><img src="img/app3.png" class="img-responsive"></li>
+					<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="img/app2.png" class="img-responsive"></li>
+					<li class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="img/app1.png" class="img-responsive"></li>
 				</div>
 		</div>
 		</div>
@@ -253,51 +262,46 @@
             </div>
         </div>
     </div>
-</div>
-		
+</div>		
 </section>
+<hr>
 
 <section id="contact">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6 col-sm-12 getIN"> 
-					<div class="social">
-					<p>Intrested to have your application done by me Simply drop your message</p>
+				<div class="col-md-6 col-sm-12 contact-white"> 
+					<p>Intrested to have your application <strong class="txt-enhance text-uppercase">done by me</strong> Simply drop your message</p>
 					<p>I will respond within 2x24 hours.</p>
 					<h1>Get in Touch</h1>
-					<a class="tombol-twitter" href="#" role="button">Twitter</a>
-					<a class="tombol-blog" href="#" role="button">Blog</a>
-					<a class="tombol-github" href="#" role="button">GitHub</a>
-					</div>
+					<a class="button button-twitter" href="#" role="button">Twitter</a>
+					<a class="button button-blog" href="#" role="button">Blog</a>
+					<a class="button button-github" href="#" role="button">GitHub</a>
 				</div>
 
 				<div class="col-md-6 col-sm-12 contact-parallax" data-parallax="scroll">
 					<div class="contact-container">
 					<h2>Discuss Your Application</h2>
-					<form>
-						<h4>Subject</h4>
-						<br>
-						<input type="text">
-						<br>
-						<h4>Description</h4>
-						<br>
-						<textarea></textarea>
-						<br>
-						<a class="tombol2" href="#" role="button">Send</a>
+					<form action="" role="form">
+						<div class="form-group">
+							<label for="form-elem-1">Subject</label>
+							<input type="text" id="form-elem-1" class="form-control">
+						</div>
+
+						<div class="form-group">
+							<label for="form-elem-2">Description</label>
+							<textarea id="form-elem-2" class="form-control"></textarea>
+						</div>
+						<button class="button button-primary" href="#" role="button">Send</button>
 					</form>
 					</div>
 				</div>
 	    	</div>
 	    </div>
 	</section>
-	<div class="container">
-	<div class="row" style="height: 400px"></div>
-	</div>	
-		
 
-
-
-	
+	<footer>
+		<p>Template by <span class="txt-enhance">Carbon-Dev</span></p>
+	</footer>	
 <!-- Javascript Handling --> 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

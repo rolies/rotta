@@ -68,6 +68,18 @@ $(function() {
   });
 });
 
+//Progress Bar
+var $skillcss = $('.css');
+$skillcss.waypoint (function() {
+		$skillcss.addClass('css-animate');
+}, {offset: '95%'});
+
+var $skillj = $('.jva');
+$skillj.waypoint (function() {
+		$skillj.addClass('jva-animate');
+}, {offset: '95%'});
+
+
 // FOR NAVBAR
 $(window).scroll(function() {
         if ($(this).scrollTop() > 15) {

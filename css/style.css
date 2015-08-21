@@ -161,6 +161,15 @@ nav { padding-bottom: 10px}
 }
 .aboutPIC { cursor: default }
 
+.skill {
+	padding: 2em 0 3em 0;
+}
+.css, .jva {
+	width: 10%;
+	transition: 2s ease;
+}
+.css-animate{width: 80%}
+.jva-animate{width: 90%}
 /*--------------------- Works Style --------------------*/
 .works{
 	height: auto;

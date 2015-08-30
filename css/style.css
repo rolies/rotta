@@ -73,7 +73,7 @@ nav { padding-bottom: 10px}
     -moz-border-radius:5px;
     border-radius:5px;
 }
-.navbar-alt.navbar-default {
+.navbar-alt {
     background-attachment: scroll;
     background-clip: border-box;
     background-color: rgba(255, 255, 255, 0.9);

@@ -74,18 +74,10 @@ nav { padding-bottom: 10px}
     border-radius:5px;
 }
 .navbar-alt {
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: rgba(255, 255, 255, 0.9);
-    background-image: none;
-    background-origin: padding-box;
-    background-position: 0 0;
-    background-repeat: repeat;
-    background-size: auto auto;
-    border-bottom-color: #e8e9ed;
-    border-left-color: #e8e9ed;
-    border-right-color: #e8e9ed;
-    border-top-color: #e8e9ed;
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 7px 8px -6px rgba(0,0,0,0.26);
+-moz-box-shadow: 0px 7px 8px -6px rgba(0,0,0,0.26);
+box-shadow: 0px 7px 8px -6px rgba(0,0,0,0.26);
 }
 .header-container{
 	margin: auto;
@@ -164,12 +156,14 @@ nav { padding-bottom: 10px}
 .skill {
 	padding: 2em 0 3em 0;
 }
-.css, .jva {
+.css, .jva, .php, .obj {
 	width: 10%;
 	transition: 2s ease;
 }
 .css-animate{width: 80%}
 .jva-animate{width: 90%}
+.php-animate{width: 100%}
+.obj-animate{width: 97%}
 /*--------------------- Works Style --------------------*/
 .works{
 	height: auto;
@@ -273,12 +267,13 @@ ul li, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {list-style:none}
 
 .carousel-control.left,.carousel-control.right  {background:none;width:25px; color: #646a76; box-shadow: none;}
 .carousel-control.left, .carousel-control.right  {top:20%; color: #46474a; font-size: 10em; }
-
+.broun-block hr {
+	
+}
 .broun-block {
     background: #fff;
     padding-bottom: 40px;
     padding-top: 50px;
-    border-top: 5px solid #3DC299;
 }
 .carousel {padding-bottom: 40px}
 
@@ -334,8 +329,10 @@ ul li, .col-lg-3, .col-md-4, .col-sm-6, .col-xs-12 {list-style:none}
 }
 .person-text i {color: #fff}
 .rel {position: relative}
-img.white-space { margin-right: 18.24px}
-img.adjust {margin-left: 8px}
+.logo-list ul li{
+	list-style: none;
+	display: inline;
+}
 .fa-chevron-left, .fa-chevron-right {font-size: 32px}
 
 /*-------------- Contact Style------------------- */
@@ -453,4 +450,72 @@ footer {
 	/* Customize position for each bubble testimonial */
 	.first-posi {position: absolute; top: -1px; left: 25%;}
 	.second-posi {position: absolute; top: 2px; right: 20%;}
+}
+
+
+/*==========================================
+   ISOTOPE FILTERING STYLES
+    =====================================================*/
+
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+/* ISOTOPE CSS3 TRANSACTIONS */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+/* DISABLE ISOTOPE CSS3 TRANSACTIONS */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/* DISABLE ISOTOPE CSS3 TRANSACTIONS FOR CONTAINERS WITH INFINITE SCROLLING */
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+
+.border::after {
+	background: #26A166 none repeat scroll 0 0;
+	border-radius: 50px;
+	content: "";
+	display: block;
+	height: 5px;
+	margin: 0 auto;
+	position: relative;
+	width: 30%;
+	bottom: 0;
+	z-index: 1;
 }

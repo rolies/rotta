@@ -18,7 +18,7 @@ a:hover {color: #19283F}
     padding: 9px 16px;
     margin-right: 8px
 }
-.button-primary {
+.button-read {
 	background-color: #48CFAD;
 	border-bottom: 6px solid #3DC2A1;
 }
@@ -26,18 +26,32 @@ a:hover {color: #19283F}
 	background-color: #21a9e0;
 	border-bottom: 6px solid #129ec9;
 }
-.button-blog {
-	background-color: #ff9650;
-	border-bottom: 6px solid #E5834F;
+.button-twitter:hover {
+	background: #1db0dd;
+	border-bottom: 6px solid #0d84a0;
+	color: #166982;
+}
+.button-fb {
+	background-color: #3D5A98;
+	border-bottom: 6px solid #29487F;
+}
+.button-fb:hover {
+	background-color: #3f64a5;
+	border-bottom: 6px solid #1E3B66;
+	color: #132C51;
 }
 .button-github {
 	background-color: #C1BEBD;
 	border-bottom: 6px solid #AFACAA;
 }
-.button.active, .button.focus, .button:active, .button:focus, .button:hover {
+.button-github:hover {
+	background-color: #C4C4C4;
+	border-bottom: 6px solid #939190;
+	color: #7C7C7B;
+}
+.button-read:hover {
 	background-color: #48CFAD;
 	border-bottom: 6px solid #369B82;
-	text-decoration: none;
 	color: #205D4E;
 }
 
